@@ -40,10 +40,10 @@ module.exports = robot => {
         } else {
             inProgress = true;
             getVehicle().then(vehicle => {
-                msg.send(`Your fuel level is ${vehicle.fuel_level_percent}`);
+                msg.send(`Your fuel level is ${vehicle.fuel_level_percent}%`);
+                inProgress = false;
             }).catch(error => {
                 msg.send(`There was an error: ${error}`);
-            }).finally(() => {
                 inProgress = false;
             });
         }
