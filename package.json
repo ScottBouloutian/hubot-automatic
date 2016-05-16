@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "jshint index.js",
+    "test": "tape tests/*.ut.js"
   },
   "author": "Scott Bouloutian",
   "license": "ISC",
   "dependencies": {
     "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.2",
+    "proxyquire": "^1.7.4",
+    "sinon": "^1.17.3",
+    "tape": "^4.5.1"
   }
 }

@@ -1,8 +1,8 @@
-'use strict';
-
-let request = require('request');
+const request = require('request');
 
 module.exports = robot => {
+    'use strict';
+
     const API_ROOT = 'https://api.automatic.com';
     const TOKEN = process.env.HUBOT_AUTOMATIC_TOKEN;
 
